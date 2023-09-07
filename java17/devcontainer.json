@@ -1,0 +1,29 @@
+{
+    "image": "eggboy/devcontainer:java17",
+    "customizations": {
+        "settings": {
+            "java.home": "/docker-java-home",
+            "java.format.settings.url": "https://raw.githubusercontent.com/google/styleguide/gh-pages/eclipse-java-google-style.xml",
+            "java.format.settings.profile": "GoogleStyle",
+            "java.completion.importOrder": [
+                "com",
+                "java",
+                "javax",
+                "org"
+            ]
+        },
+        "vscode": {
+            "extensions": [
+				"GitHub.copilot-labs",
+				"GitHub.copilot-chat",
+				"GitHub.copilot",
+				"redhat.java",
+				"vscjava.vscode-java-pack",
+				"vmware.vscode-spring-boot",
+				"redhat.vscode-xml",
+				"vmware.vscode-boot-dev-pack",
+				"vscjava.vscode-java-debug"
+			]
+        }
+    }
+}
